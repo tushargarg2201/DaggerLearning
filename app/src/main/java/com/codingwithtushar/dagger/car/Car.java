@@ -12,6 +12,11 @@ public class Car {
         this.wheels = wheels;
     }
 
+    @Inject
+    public void enableRemote(Remote remote) {
+        remote.enableRemote();
+    }
+
     public void drive() {
         engine.drive();
     }
